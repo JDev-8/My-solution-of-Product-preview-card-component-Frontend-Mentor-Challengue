@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My sollution for Product preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="shortcut icon"
+      href="Assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 class="display-none">
+        My sollution for Product preview card component
+      </h1>
+      <section class="card">
+        <article class="card-image">
+          <picture>
+            <source
+              srcset="Assets/image-product-desktop.jpg"
+              media="(min-width:600px)"
+            />
+            <source
+              srcset="Assets/image-product-mobile.jpg"
+              media="(max-width:601px)"
+            />
+            <img
+              src="Assets/image-product-mobile.jpg"
+              alt="Image product"
+              class="card-image-img"
+            />
+          </picture>
+        </article>
+        <article class="card-content">
+          <p class="card-content-category">PERFUME</p>
+          <h2 class="card-content-title">Gabrielle Essence Eau De Parfum</h2>
+          <p class="card-content-text">
+            A floral, solar and voluptuos interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL
+          </p>
+          <h3 class="card-content-price">
+            $149.99 <span class="card-content-price-discount">$169.99</span>
+          </h3>
+          <button class="card-content-button">
+            <img src="Assets/icon-cart.svg" alt="icon cart" /> Add to Cart
+          </button>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
